@@ -1,0 +1,28 @@
+Started by GitHub push by prajwalgowdap
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/WebHook_Job
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/prajwalgowdap/Test1.git
+ > git init /var/lib/jenkins/workspace/WebHook_Job # timeout=10
+Fetching upstream changes from https://github.com/prajwalgowdap/Test1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/prajwalgowdap/Test1.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/prajwalgowdap/Test1.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/prajwalgowdap/Test1.git # timeout=10
+Fetching upstream changes from https://github.com/prajwalgowdap/Test1.git
+ > git fetch --tags --progress https://github.com/prajwalgowdap/Test1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a240264f298a09b996e9ad7b8ef186460af11afc (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a240264f298a09b996e9ad7b8ef186460af11afc
+Commit message: "added new file prime"
+First time build. Skipping changelog.
+[WebHook_Job] $ /bin/sh -xe /tmp/jenkins1861467479768101743.sh
++ cd /var/lib/jenkins/workspace
++ make
+make: *** No targets specified and no makefile found.  Stop.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

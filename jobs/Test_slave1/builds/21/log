@@ -1,0 +1,52 @@
+Started by user [8mha:////4FcCDiUnY2ztAKTeAN/H2nsrvgVrs98s1KuUrU85VP18AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/dLi1CL9gqLErPLEnOL0/PKURAA/TWK0yAAAAA==[0mprajwalsgowda
+Running as SYSTEM
+Building remotely on [8mha:////4Hv4byoGrq+H4ReQrgg4F0Hx7ran19/QQq8AgA4iytuUAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eCcxLJUQwAO88z1xQAAAA==[0mSlave1 in workspace /home/slave1/workspace/Test_slave1/workspace/Test_slave1
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/prajwalgowdap/Test1.git # timeout=10
+Fetching upstream changes from https://github.com/prajwalgowdap/Test1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/prajwalgowdap/Test1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 5909c965c559f81aa71f243873a2f3f5d004791f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5909c965c559f81aa71f243873a2f3f5d004791f
+Commit message: "modified"
+ > git rev-list --no-walk ef5eaa143b55cf3197fbcd65b2da6d370ae72d3e # timeout=10
+[Test_slave1] $ /bin/sh -xe /tmp/jenkins8942167347490218388.sh
++ cd /home/slave1/workspace/Test_slave1/workspace/Test_slave1
++ make
+gcc -c reverse.c
+reverse.c: In function ‘reverse’:
+reverse.c:9:4: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]
+    gets(arr);
+    ^~~~
+    fgets
+reverse.c:11:4: warning: implicit declaration of function ‘strrev’; did you mean ‘strsep’? [-Wimplicit-function-declaration]
+    strrev(arr);
+    ^~~~~~
+    strsep
+gcc -c main.c
+main.c: In function ‘main’:
+main.c:4:1: warning: implicit declaration of function ‘fact’ [-Wimplicit-function-declaration]
+ fact();
+ ^~~~
+main.c:5:1: warning: implicit declaration of function ‘big’ [-Wimplicit-function-declaration]
+ big();
+ ^~~
+main.c:6:1: warning: implicit declaration of function ‘palindrome’ [-Wimplicit-function-declaration]
+ palindrome();
+ ^~~~~~~~~~
+main.c:7:1: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+ reverse();
+ ^~~~~~~
+gcc -o ABC.exe big.o fact.o palindrome.o reverse.o main.o
+reverse.o: In function `reverse':
+reverse.c:(.text+0x1f): warning: the `gets' function is dangerous and should not be used.
+reverse.c:(.text+0x30): undefined reference to `strrev'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:2: ABC.exe] Error 1
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

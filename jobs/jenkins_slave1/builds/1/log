@@ -1,0 +1,25 @@
+Started by user [8mha:////4FcCDiUnY2ztAKTeAN/H2nsrvgVrs98s1KuUrU85VP18AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/dLi1CL9gqLErPLEnOL0/PKURAA/TWK0yAAAAA==[0mprajwalsgowda
+Running as SYSTEM
+Building remotely on [8mha:////4OUvb+gEF+1JqWX3cd5qN58LZqgp6muE0s2HhbzKzVXWAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/eT83ILSktQifa/UvOzMvOL44JzEslRDAJbSHLbNAAAA[0mJenkins_Slave1 (java) in workspace /home/jenkins_slave1/workspace/jenkins_slave1
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/prajwalgowdap/Test1.git
+ > git init /home/jenkins_slave1/workspace/jenkins_slave1 # timeout=10
+Fetching upstream changes from https://github.com/prajwalgowdap/Test1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/prajwalgowdap/Test1.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/prajwalgowdap/Test1.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/prajwalgowdap/Test1.git # timeout=10
+Fetching upstream changes from https://github.com/prajwalgowdap/Test1.git
+ > git fetch --tags --progress https://github.com/prajwalgowdap/Test1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7d4a0e386b2c58b45442484b8cc9fed07fee48be (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7d4a0e386b2c58b45442484b8cc9fed07fee48be
+Commit message: "clean programs"
+First time build. Skipping changelog.
+[jenkins_slave1] $ /bin/sh -xe /tmp/jenkins3693940803023746546.sh
++ cd /home/jenkins_slave1
+Finished: SUCCESS

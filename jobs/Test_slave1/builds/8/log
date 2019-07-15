@@ -1,0 +1,27 @@
+Started by user [8mha:////4FcCDiUnY2ztAKTeAN/H2nsrvgVrs98s1KuUrU85VP18AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/dLi1CL9gqLErPLEnOL0/PKURAA/TWK0yAAAAA==[0mprajwalsgowda
+Running as SYSTEM
+Building remotely on [8mha:////4Hv4byoGrq+H4ReQrgg4F0Hx7ran19/QQq8AgA4iytuUAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eCcxLJUQwAO88z1xQAAAA==[0mSlave1 (Java) in workspace /home/slave1/workspace/Test_slave1/workspace/Test_slave1
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/prajwalgowdap/Test1.git
+ > git init /home/slave1/workspace/Test_slave1/workspace/Test_slave1 # timeout=10
+Fetching upstream changes from https://github.com/prajwalgowdap/Test1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/prajwalgowdap/Test1.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/prajwalgowdap/Test1.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/prajwalgowdap/Test1.git # timeout=10
+Fetching upstream changes from https://github.com/prajwalgowdap/Test1.git
+ > git fetch --tags --progress https://github.com/prajwalgowdap/Test1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ef5eaa143b55cf3197fbcd65b2da6d370ae72d3e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ef5eaa143b55cf3197fbcd65b2da6d370ae72d3e
+Commit message: "moddified 3 files and added a new reverse.c file"
+ > git rev-list --no-walk bd512097ac82047759e09ee82f90aa7ce3ac9d11 # timeout=10
+[Test_slave1] $ /bin/sh -xe /tmp/jenkins5938235131140921473.sh
++ cd /home/slave1/workspace/Test_slave1
++ make
+make: 'ABC.exe' is up to date.
+Finished: SUCCESS

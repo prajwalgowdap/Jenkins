@@ -1,0 +1,47 @@
+Started by GitHub push by prajwalgowdap
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/WebHook_Job
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/prajwalgowdap/Test1.git # timeout=10
+Fetching upstream changes from https://github.com/prajwalgowdap/Test1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/prajwalgowdap/Test1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision bf7d286b6708b53371b886753e9ba4fe99c4c70a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bf7d286b6708b53371b886753e9ba4fe99c4c70a
+Commit message: "modified prime.c"
+ > git rev-list --no-walk f1098b5fbb55d3bfe86299993e57123cd2a322c1 # timeout=10
+[WebHook_Job] $ /bin/sh -xe /tmp/jenkins6701451384155997622.sh
++ cd /var/lib/jenkins/workspace/WebHook_Job
++ make
+gcc -c big.c
+gcc -c fact.c
+gcc -c palindrome.c
+gcc -c reverse.c
+gcc -c main.c
+main.c: In function ‘main’:
+main.c:5:1: warning: implicit declaration of function ‘fact’ [-Wimplicit-function-declaration]
+ fact();
+ ^~~~
+main.c:6:1: warning: implicit declaration of function ‘big’ [-Wimplicit-function-declaration]
+ big();
+ ^~~
+main.c:7:1: warning: implicit declaration of function ‘palindrome’ [-Wimplicit-function-declaration]
+ palindrome();
+ ^~~~~~~~~~
+main.c:8:1: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+ reverse();
+ ^~~~~~~
+main.c:9:8: warning: ‘return’ with a value, in function returning void
+ return 0;
+        ^
+main.c:3:6: note: declared here
+ void main()
+      ^~~~
+gcc -c prime.c
+gcc -o ABC.exe big.o fact.o palindrome.o reverse.o main.o prime.o
+Finished: SUCCESS

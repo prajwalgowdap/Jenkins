@@ -1,0 +1,11 @@
+commit 7d4a0e386b2c58b45442484b8cc9fed07fee48be
+tree 21d72d1026f627ea017a71fb3f6f412a8c8f0f7c
+parent 5909c965c559f81aa71f243873a2f3f5d004791f
+author prajwalgowda <prajwalsgowda06@gmail.com> 2019-07-12 19:16:18 +0000
+committer prajwalgowda <prajwalsgowda06@gmail.com> 2019-07-12 19:16:18 +0000
+
+    clean programs
+
+
+
+:100644 100644 eea8014911c2b14b00b101388c149043341e13f2 5959bbcf55c1a4f79967215d1e946deef2d468c3 M	reverse.c

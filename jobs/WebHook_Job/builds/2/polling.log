@@ -1,0 +1,11 @@
+Started on Jul 13, 2019 4:45:49 PM
+Started by event from 140.82.115.66 ⇒ http://18.223.169.128:8080/github-webhook/ on Sat Jul 13 16:45:49 UTC 2019
+Using strategy: Default
+[poll] Last Built Revision: Revision a240264f298a09b996e9ad7b8ef186460af11afc (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/prajwalgowdap/Test1.git # timeout=10
+Found 3 remote heads on https://github.com/prajwalgowdap/Test1.git
+[poll] Latest remote head revision on refs/heads/master is: f1098b5fbb55d3bfe86299993e57123cd2a322c1
+Done. Took 0.12 sec
+Changes found

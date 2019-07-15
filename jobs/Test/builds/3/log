@@ -1,0 +1,19 @@
+Started by user [8mha:////4FcCDiUnY2ztAKTeAN/H2nsrvgVrs98s1KuUrU85VP18AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/dLi1CL9gqLErPLEnOL0/PKURAA/TWK0yAAAAA==[0mprajwalsgowda
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Test
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/prajwalgowdap/Test1.git # timeout=10
+Fetching upstream changes from https://github.com/prajwalgowdap/Test1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/prajwalgowdap/Test1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ab2e2e23c6dcbbaadf2564b1f6d4c56b2d9e5225 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ab2e2e23c6dcbbaadf2564b1f6d4c56b2d9e5225
+Commit message: "added positive and negative script"
+ > git rev-list --no-walk ab2e2e23c6dcbbaadf2564b1f6d4c56b2d9e5225 # timeout=10
+[Test] $ /bin/sh -xe /tmp/jenkins8611713218368189866.sh
+Finished: SUCCESS

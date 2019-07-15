@@ -1,0 +1,7 @@
+Started by user [8mha:////4FcCDiUnY2ztAKTeAN/H2nsrvgVrs98s1KuUrU85VP18AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/dLi1CL9gqLErPLEnOL0/PKURAA/TWK0yAAAAA==[0mprajwalsgowda
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/hi
+[hi] $ /bin/sh -xe /tmp/jenkins4488106238459943372.sh
++ echo hi
+hi
+Finished: SUCCESS

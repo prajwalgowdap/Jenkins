@@ -1,0 +1,52 @@
+Started by user [8mha:////4FcCDiUnY2ztAKTeAN/H2nsrvgVrs98s1KuUrU85VP18AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/dLi1CL9gqLErPLEnOL0/PKURAA/TWK0yAAAAA==[0mprajwalsgowda
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/Test5
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/prajwalgowdap/Test1.git
+ > git init /var/lib/jenkins/workspace/Test5 # timeout=10
+Fetching upstream changes from https://github.com/prajwalgowdap/Test1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/prajwalgowdap/Test1.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/prajwalgowdap/Test1.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/prajwalgowdap/Test1.git # timeout=10
+Fetching upstream changes from https://github.com/prajwalgowdap/Test1.git
+ > git fetch --tags --progress https://github.com/prajwalgowdap/Test1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 04a22bfdca3ae2dca614e13fead6de9b72908adf (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 04a22bfdca3ae2dca614e13fead6de9b72908adf
+Commit message: "modified big.c"
+First time build. Skipping changelog.
+[Test5] $ /bin/sh -xe /tmp/jenkins7578381453489057435.sh
++ cd /var/lib/jenkins/workspace/Test5
++ make
+gcc -c big.c
+gcc -c fact.c
+gcc -c palindrome.c
+gcc -c reverse.c
+gcc -c main.c
+main.c: In function ‘main’:
+main.c:5:1: warning: implicit declaration of function ‘fact’ [-Wimplicit-function-declaration]
+ fact();
+ ^~~~
+main.c:6:1: warning: implicit declaration of function ‘big’ [-Wimplicit-function-declaration]
+ big();
+ ^~~
+main.c:7:1: warning: implicit declaration of function ‘palindrome’ [-Wimplicit-function-declaration]
+ palindrome();
+ ^~~~~~~~~~
+main.c:8:1: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+ reverse();
+ ^~~~~~~
+main.c:9:8: warning: ‘return’ with a value, in function returning void
+ return 0;
+        ^
+main.c:3:6: note: declared here
+ void main()
+      ^~~~
+gcc -c prime.c
+gcc -o ABC.exe big.o fact.o palindrome.o reverse.o main.o prime.o
+Finished: SUCCESS
